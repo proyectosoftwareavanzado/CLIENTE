@@ -8,6 +8,7 @@ const user = require('../controllers/users/user');
 
 const api = express.Router();
 
-api.get('/users',user.listUsers);
+api.get('/obtenerCatalogoTienda',user.obtenerCatalogoTienda);
+api.get('/enviarOrden',user.enviarOrden);
 
 module.exports = api;
