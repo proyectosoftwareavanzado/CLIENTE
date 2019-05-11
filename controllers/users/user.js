@@ -33,7 +33,7 @@ async function obtenerCatalogoTienda(req,res){
         for (let index = 0; index < skusComprar.length; index++) {
             const element = skusComprar[index];
             let ram2 = Math.floor(Math.random()*500);
-            jsonEnviar = jsonEnviar + '{"sku" :" '+skusComprar[index]+'","cantidad": '+ram2+'}';
+            jsonEnviar = jsonEnviar + '{"sku" : "'+skusComprar[index]+'","cantidad": '+ram2+'}';
             if (index!=skusComprar.length-1) {
                 jsonEnviar = jsonEnviar + ',';
             } 
